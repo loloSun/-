@@ -1,0 +1,92 @@
+*{
+	margin:0;
+	padding:0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.bigbox{
+	width: 300px;
+	height: 300px;
+	margin:auto;
+	border-radius: 20px;
+	border:1px solid #000;
+	text-align: center;
+	overflow: hidden;
+}
+.bigbox li,a{
+	float: left;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	position: relative;
+	border-radius: 20px;
+	overflow: hidden;
+}
+.page{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	border-bottom:1px solid pink;
+	display: none;
+}
+.bigbox .mask{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left:0;
+    top:0;
+    display: none;
+    z-index: 3;
+    border:3px solid red;
+    box-sizing: border-box;
+	border-radius: 20px;
+}
+.bigbox a:hover {
+    cursor: pointer;
+    color: orange;
+    font-size: 18px;
+}
+.bigbox .active .mask{
+    display: block;
+}
+.bigbox li:nth-child(1){
+	background: url(img/none.jpeg) center no-repeat;
+	background-size: 90%;
+}
+.bigbox li:nth-child(2){
+	background: url(img/again.jpeg) center no-repeat;
+	background-size: 100%;
+}
+.bigbox li:nth-child(3){
+	background: url(img/sugar.jpg) center no-repeat;
+	background-size: 160%;
+}
+.bigbox li:nth-child(6){
+	background: url(img/bun.jpg) center no-repeat;
+	background-size: 180%;
+}
+.bigbox li:nth-child(9){
+	background: url(img/little.jpeg) center no-repeat;
+	background-size: 150%;
+}
+.bigbox li:nth-child(8){
+	background: url(img/cake.jpeg) center no-repeat;
+	background-size: 150%;
+}
+.bigbox li:nth-child(7){
+	background: url(img/milk.jpg) center no-repeat;
+	background-size: 140%;
+}
+.bigbox li:nth-child(4){
+	background: url(img/big.jpg) center no-repeat;
+	background-size: 100%;
+}
+.bigbox a{
+	background: url(img/start.jpeg) center no-repeat;
+	background-size: 100%;
+}
